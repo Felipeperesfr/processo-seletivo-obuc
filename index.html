@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<head>
+<title>Prova Técnica - OBUC</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="imagem"></div>
+        <div class="content">
+            <div class="first-half-header">
+                <span class="first-text-header">Controle de Locais de Trabalho</span>
+            </div>  
+            <div class="second-half-header">
+                <div class="second-half-header-text">
+                    <span class="second-text-header">Usuário</span>
+                    <span class="third-text-header">Administrador</span>
+                </div>
+                <div class="second-half-header-icons">
+                    <i class="fas fa-user"></i>
+                    <i class="fas fa-grip-lines-vertical"></i>
+                    <i class="fas fa-home"></i>
+                </div>
+            </div>
+        </div>    
+
+    </header>
+
+    <div class="page-content">
+        <nav class="side-menu">
+            <a href="#" class="admin-icon">
+                <span><i class="fas fa-cog"></i>Adminstração</span>
+            </a>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span>Administradores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Áreas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Locais de Trabalho</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Habilidades</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Log</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Responsáveis</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    <div class="main-content">
+        <p class>
+            <span>Locais de Trabalho</span>
+        </p>
+        <div class="main-panel">
+            <ul>
+                <li class="main-panel-index">
+                    <h1>Prédio</h1>
+                    <h2>Local de trabalho</h2>
+                </li>
+                <li class="main-panel-input">
+                    <select id="selection-id"></select>
+                    <input placeholder="Nome do Local de Trabalho" id="input-id" name="input-name">
+                    <a href="#" id="table-add"><i class="far fa-plus-square"></i></a>
+                </li>
+                <!-- <li class="table-header">
+                    <h3>Prédio</h3>
+                    <h4>Local de Trabalho</h4>
+                </li> -->
+                <li class="main-panel-table" id="main-panel-table">
+                    
+                </li>
+            </ul>
+        </div>
+    </div>    
+
+    <div class="modal-container" id="modal-container">
+        <div class="modal-body" id="modal-body-view">
+            <input type="hidden" name="id-to-get-lt" />
+            <div class="modal-content">
+                <div class="modal-building" >
+                    <p>Novo Prédio:</p>
+                    <select id="modal-select"></select>
+                </div>    
+                <div class="modal-lt">
+                    <p>Novo L.T:</p>
+                    <input type="text" name="input-modal" placeholder="Novo Valor de Local de Trabalho">
+                </div>    
+            </div>
+            <div class="modal-buttons">
+                <button id="modal-close-button">Close</button>
+                <button id="modal-apply-button">Apply</button>
+            </div>
+        </div>
+    </div>    
+
+    </div>
+
+    <script src="JS/data.js"></script>
+    <script src="JS/selector.js"></script>
+    <script src="JS/table.js"></script>
+    <script src="JS/ltServices.js"></script>
+
+</body>
+
+</html>
